@@ -65,6 +65,8 @@ services:
       # - PLUGIN_PPOLICY=FALSE
       # - PLUGIN_SSH=FALSE
       # - PLUGIN_SYSTEMS=FALSE
+      # Custom
+      - PLUGIN_MIXEDGROUPS=TRUE # Seems to be needed for OpenLDAP SCHEMA_TYPE=rfc2307bis
 
     networks:
       - openldap
