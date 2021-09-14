@@ -55,6 +55,17 @@ services:
       - ENABLE_ZABBIX=FALSE #TRUE
       - CONTAINER_NAME=openldap
 
+      # - REAPPLY_PLUGIN_SCHEMAS=TRUE
+      # Default enabled
+      # - PLUGIN_AUDIT=FALSE
+      # - PLUGIN_DNS=FALSE
+      # - PLUGIN_DSA=FALSE
+      # - PLUGIN_MAIL=FALSE
+      # - PLUGIN_PERSONAL=FALSE
+      # - PLUGIN_PPOLICY=FALSE
+      # - PLUGIN_SSH=FALSE
+      # - PLUGIN_SYSTEMS=FALSE
+
     networks:
       - openldap
     restart: always
