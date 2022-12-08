@@ -1,14 +1,14 @@
 # Load overlay
-dn: cn=modules,cn=config
+dn: cn=module{0},cn=config
 changetype: modify
 add: olcModuleLoad
 olcModuleLoad: dynlist
 
 # Set up
 # Referemce: https://www.mail-archive.com/openldap-technical@openldap.org/msg26067.html
-dn: olcOverlay={3}dynlist,olcDatabase={1}mdb,cn=config
+dn: olcOverlay=dynlist,olcDatabase={1}mdb,cn=config
 changetype: add
 objectClass: olcOverlayConfig
 objectClass: olcDynamicList
-olcOverlay: {3}dynlist
+olcOverlay: dynlist
 olcDlAttrSet: groupOfURLs memberURL member+memberOf@groupOfNames
